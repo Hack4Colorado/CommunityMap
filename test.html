@@ -5,7 +5,7 @@
     <!--The viewport meta tag is used to improve the presentation and behavior of the samples 
       on iOS devices-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
-    <title>Class Breaks Renderer</title>
+    <title>Community Map</title>
 
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
     <style>
@@ -31,9 +31,9 @@
       ) {
         map = new Map("map", {
           basemap: "streets",
-          center: [-98.215, 38.382],
+          center: [-104.9847, 38.7392],
           zoom: 7,
-          slider: false
+          slider: true
         });
 
         var symbol = new SimpleFillSymbol();
@@ -45,6 +45,7 @@
         // from a site like www.colorbrewer.org
         //
         // alternatively, ArcGIS Server's generate renderer task could be used
+        
         var renderer = new ClassBreaksRenderer(symbol, "POP07_SQMI");
         renderer.addBreak(0, 25, new SimpleFillSymbol().setColor(new Color([56, 168, 0, 0.5])));
         renderer.addBreak(25, 75, new SimpleFillSymbol().setColor(new Color([139, 209, 0, 0.5])));
@@ -59,7 +60,7 @@
           infoTemplate: infoTemplate
         });
         
-        featureLayer.setDefinitionExpression("STATE_NAME = 'Kansas'");
+        featureLayer.setDefinitionExpression("STATE_NAME = 'Colorado'");
         featureLayer.setRenderer(renderer);
         map.addLayer(featureLayer);
       });
