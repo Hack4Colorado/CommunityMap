@@ -7,7 +7,7 @@ function initialize() {
   });
 
   // Load a GeoJSON from the same server as our demo.
-  map.data.loadGeoJson('https://github.com/johan/world.geo.json/blob/master/countries/USA/CO/Jefferson.geo.json');
+  map.data.loadGeoJson('./json/Jefferson.geo.json');
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
