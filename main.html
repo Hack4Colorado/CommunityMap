@@ -5,16 +5,47 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-      html, body, #map-canvas {
+      html, body{
         height: 100%;
         margin: 0px;
         padding: 0px
+      }
+      #map-canvas {
+        
+        height: 50%;
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 20%;
+        padding: 0px 
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src=./map.js></script>
   </head>
   <body>
+    <body bgcolor="##3366FF">
     <div id="map-canvas"></div>
+    <form name="myWebForm" method="post">
+      <select>
+        <option value="" disabled="disabled" selected="selected">Please select an Area Number:</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+      </select>
+      <select>
+        <option value="" disabled="disabled" selected="selected">Please select your Satisfaction:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="RESET" />
+    </form>
   </body>
 </html>
