@@ -120,7 +120,7 @@ select
 #keykey
 {
 	font-family: calibri, sans-serif;
-	margin-left: 1270px;
+	margin-left: 1300px;
 	margin-bottom: -50px;
 	margin-top: 107px;
 }
@@ -135,7 +135,7 @@ select
 #submissionline
 {
 	position: relative;
-	top: -320px;
+	top: -290px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -149,9 +149,9 @@ select
 {
 	margin-top: 100px;
 	position: absolute;
-	bottom: -10px;
+	bottom: -5px;
 	width: 100%;
-	font-size: 10px;
+	font-size: 12px;
 	font-family: calibri, sans-serif;
 	color: #303030;
 	text-align: center;
