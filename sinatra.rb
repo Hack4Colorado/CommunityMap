@@ -23,7 +23,9 @@ get '/' do
 			@averagedResults[counter] = @regionResults[counter][0]/@regionResults[counter][1]
 			counter += 1
 		end
-		puts @averagedResults
+		if @averagedResults.empty?
+			@averagedResults = 0
+		end
 	end
 
 	erb :main
