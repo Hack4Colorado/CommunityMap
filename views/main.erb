@@ -48,7 +48,13 @@
       <div id="map-canvas">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src=/javascripts/map.js>
-			initialize(<% @averagedResults %>);
+      var arr = []
+      index = 0
+      <% for value in @averagedResults %>
+        arr[index] = <%= value %>;
+        index++;
+      <%end%>
+			initialize(arr);
     </script>
       </div>
 
