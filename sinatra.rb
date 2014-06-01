@@ -45,7 +45,7 @@ post '/*' do
 	  return
 	end	
 
-	if submitter = ""
+	if submitter == ""
 		submitter = "Anonymous"
 	end
 
