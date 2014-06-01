@@ -30,13 +30,12 @@ get '/' do
 	if @averagedResults.nil?
 		@averagedResults = 0
 	end
-	puts "hello"
-	puts @averagedResults
 	erb :main
 end
 
 
-post '/' do
+post '/*' do
+	puts params
 	rating = params["ratingdropdown"]
   neighborhood = params["neighborhooddropdown"]
   submitter = params["submitter"]
@@ -46,7 +45,7 @@ post '/' do
 	  return
 	end	
 
-	if submitter.nil? 
+	if submitter = ""
 		submitter = "Anonymous"
 	end
 
