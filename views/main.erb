@@ -38,23 +38,42 @@
       <div id="filters">
         Filter by:
         <form method="get">
-          <input type="radio" name="filter" value=""> Crime rate<br>
-          <input type="radio" name="filter" value=""> Cost of Living<br>
-          <input type="radio" name="filter" value=""> daBears<br>
-        </form>
+          <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="Crime rate"> Crime rate<br>
+          <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="Cost of Living"> Cost of Living<br>
+          <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="'notBears'"> daBears<br>
+        
         <button id="applyfilterbutton">Apply Filter</button>
+        </form>
       </div>
+  
       
       <div id="map-canvas">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src=/javascripts/map.js>
-      var arr = []
-      index = 0
+        <script>console.log("prescript")
+        </script>
+    
+ <script>
+   console.log("gettingToScript");
+      if(Number(<%= @averagedResults %>) == 0){
+        console.log(<%= @averagedResults %>); 
+      }
+      else{
+      var arr = [];
+      index = 0;
+      <%if @averagedResults != 0%>
       <% for value in @averagedResults %>
         arr[index] = <%= value %>;
         index++;
       <%end%>
-			initialize(arr);
+      <%end%>
+    }
+    window.glob =arr;
+
+ </script>       
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>console.log("hello");</script>
+    <script src="/javascripts/map.js">
+      console.log("passedScript");
+ 
     </script>
       </div>
 
