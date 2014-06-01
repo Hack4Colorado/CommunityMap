@@ -38,7 +38,7 @@
       <div id="filters">
         Filter by:
         <form method="get">
-          <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="Crime rate"> Crime rate<br>
+          <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="Crime Rate"> Crime rate<br>
           <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="Cost of Living"> Cost of Living<br>
           <input type="radio" name="applyfilterbutton" id="applyfilterbutton" value="'notBears'"> daBears<br>
         
@@ -80,7 +80,7 @@
 
       <form id="submissionline" method="post" action="/">
       Rating of
-        <select id="ratingdropdown">
+        <select id="ratingdropdown" name="ratingdropdown">
           <option value="">(choose one)</option>
           <option value="0">0</option>
           <option value="1">1</option>
@@ -95,7 +95,7 @@
           <option value="10">10</option>
         </select>
         for
-        <select id="neighborhooddropdown">
+        <select id="neighborhooddropdown" name="neighborhooddropdown">
           <option value="">(choose one)</option)>
           <option value="0">Alamosa</option>
           <option value="1">Arapahoe</option>
@@ -164,10 +164,10 @@
 
         Submitted by (Anonymous if empty):
         <input type='text' name='submitter'></input> to filter
-        <select id="submitwithfilter">
+        <select id="submitwithfilter" name="submitwithfilter">
           <option value="">(choose one)</option>
           <option value="Crime Rate">Crime Rate</option>
-          <option value="Cost Of Living">Cost of Living</option>
+          <option value="Cost of Living">Cost of Living</option>
           <option value="notBears">Bears</option>
 
 

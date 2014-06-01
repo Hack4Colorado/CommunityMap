@@ -34,8 +34,7 @@ get '/' do
 end
 
 
-post '/*' do
-	puts params
+post '/' do
 	rating = params["ratingdropdown"]
   neighborhood = params["neighborhooddropdown"]
   submitter = params["submitter"]
@@ -50,12 +49,13 @@ post '/*' do
 	end
 
 
-	Submission.create(:area => neighborhood,
+	Submission.create(:area => neighborhood.to_i,
 										:submitter => submitter,
-										:rating => rating,
+										:rating => rating.to_i,
 										:comment => "none",
 										:type => type
 									 )
+	redirect to("/")
 end
 
 def averagedValues(arrayOfFilteredResults)
