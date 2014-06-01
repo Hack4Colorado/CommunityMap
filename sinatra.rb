@@ -22,7 +22,7 @@ post '/' do
 	rating = params["ratingdropdown"]
   neighborhood = params["neighborhooddropdown"]
   submitter = params["submitter"]
-	type = params["type"]
+	type = params["submitwithfilter"]
 
   if rating.nil? or neighborhood.nil? or type.nil?
 	  return
