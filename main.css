@@ -1,0 +1,157 @@
+*
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+#menubar
+{
+	margin-top: -10px;
+	color: #008500;
+	background-color: #39e639;
+	font-family: calibri, sans-serif;
+	height: 50px;
+	line-height: 55px;
+	margin-bottom: 20px;
+	border-bottom-style: solid;
+	width: 100%;
+}
+#menubar ul
+{
+
+  margin: 0;
+  padding-left: 0
+}
+#menubar ul li 
+{
+  display: block;
+  float: left;
+  width: 33.33333333%;
+}
+#menubar ul li a 
+{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  border-style: none;
+  text-align: center;
+}
+#menubar ul li a:hover
+{
+  background-color: #39a639;
+  height: 50px;
+  -webkit-transition: background-color 0.3s linear 0s, color 0.3s linear 0s;
+  -moz-transition: background-color 0.3s linear 0s, color 0.3s linear 0s;
+  -ms-transition: background-color 0.3s linear 0s, color 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, color 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, color 0.3s linear 0s;
+}
+#directions1
+{
+	font-family: calibri, sans-serif;
+	text-align: center;
+}
+#submissionline
+{
+	margin-top: 15px;
+	text-align: center;
+	font-family: calibri, sans-serif;
+}
+body
+{
+	background-color: #FFFFFF;
+	margin: -5px;
+	padding: -5px;
+}
+select
+{
+  font-family: sans-serif;
+  color: black;
+}
+
+#container 
+{
+	width: 1100px;
+	display: block;
+}
+#filters
+{
+	width: 150px;
+	margin-left: 0px;
+	font-family: calibri, sans-serif;
+	position: relative;
+	top: -122px;
+	left: 275px;
+}
+#key
+{
+	margin-top: 57px;
+	position: relative;
+	margin-left: 1220px;
+	font-family: calibri, sans-serif;
+}
+#blackbox 
+{
+	height: 16px;
+	width: 16px;
+	margin-top: -18px;
+	margin-bottom: -15px;
+}
+#redbox
+{
+	height: 16px;
+	width: 16px;
+	margin-top: -18px;
+	margin-bottom: -15px;
+}
+#yellowbox
+{
+	height: 16px;
+	width: 16px;
+	margin-top: -18px;
+	margin-bottom: -15px;
+}
+#greenbox 
+{
+	height: 16px;
+	width: 16px;
+	margin-top: -18px;
+}
+#keykey
+{
+	font-family: calibri, sans-serif;
+	margin-left: 1300px;
+	margin-bottom: -50px;
+	margin-top: 107px;
+}
+#map-canvas 
+{
+	width: 735px;
+	height: 500px;
+	position: relative;
+	top: -310px;
+	left: 420px;
+}
+#submissionline
+{
+	position: relative;
+	top: -290px;
+	width: 100%;
+	margin: 0 auto;
+}
+#submissionline select
+{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#footer
+{
+	margin-top: 100px;
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	font-size: 12px;
+	font-family: calibri, sans-serif;
+	color: #303030;
+	text-align: center;
+}
