@@ -62,5 +62,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   data_mapper
   sinatra
