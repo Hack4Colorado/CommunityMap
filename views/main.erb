@@ -25,17 +25,6 @@
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src=/javascripts/map.js>
-      <% @x = -104.5847%>
-      <% @y = 39.9392 %>
-      <% while @x > -105.4847 %>
-        <% while @y > 39.6392 %>
-          makeRectangle(@x, @y, "#66CD00");
-          <% @y = @y - 0.1 %>
-        <%end%>
-        <%@y = 39.9392%>
-        <% @x = @x - 0.1 %>
-      <%end%>
-      initialize();
     </script>
   </head>
   <body>
