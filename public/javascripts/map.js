@@ -21,11 +21,24 @@ function initialize() {
   for(x= -104.4847; x > -105.4; x = x-.1){
     for(y= 39.9393; y > 39.6391; y = y-.1){
       // makeRectangle(x, y, "#66CD00", map);
+      if(x==-104.4847){
+        color = '#66CD00';
+      }
+      else if(x==-104.5847){
+        color = '#FF0000';
+      }
+      else if(x>=-104.6847 && x < -104.5847){
+        color = '#FFFF00';
+      }
+      else{
+        //document.write x;
+        color = '#000000';
+      }
       var rectangle = new google.maps.Rectangle({
-        strokeColor: '#000000',
+        strokeColor: color,
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: '#000000',
+        fillColor: color,
         fillOpacity: 0.35,
         map: map,
         bounds: new google.maps.LatLngBounds(
